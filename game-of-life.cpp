@@ -10,10 +10,10 @@
  * Every cell interacts with its eight neighbors.
  * At each step in time, the following transitions occur:
  *
- *  1. Any live cell with fewer than two live neighbors dies by exposure.
- *  2. Any live cell with more than three live neighbors dies by overcrowding.
- *  3. Any live cell with two or three live neighbors survives.
- *  4. Any dead cell with exactly three live neighbors will come to life.
+ *   1. Any live cell with fewer than two live neighbors dies by exposure.
+ *   2. Any live cell with more than three live neighbors dies by overcrowding.
+ *   3. Any live cell with two or three live neighbors survives.
+ *   4. Any dead cell with exactly three live neighbors will come to life.
  * ___________________________________________________________________________ 
  * 
  *  Author: YV31 (https://github.com/YV31)
@@ -22,17 +22,22 @@
  * 
  */
 
+// Includes {{{
+
 #include <algorithm>
 #include <array>
 #include <iostream>
 #include <raylib.h>
+
+// }}}
+
+// Varibles and Definitions {{{
 
 #define T_WHITE "\x1b[38;5;15m\x1b[1m"
 #define T_BLACK "\x1b[38;5;16m\x1b[1m"
 #define T_RESET_ "\x1b[0m "
 
 using std::array;
-
 
 const int cell_size = 4;
 
@@ -43,6 +48,10 @@ const int screen_width = (columns - 1) * cell_size;
 const int screen_height = (rows - 1) * cell_size;
 
 array<array<bool, columns>, rows> board;
+
+// }}}
+
+// Function Prototypes {{{
 
 template <size_t rows, size_t columns>
 std::uint8_t GetCellNeighborCount(int x, int y,
@@ -61,6 +70,10 @@ void UpdateDraw();
 void UpdateInput();
 
 void UpdateBoard();
+
+// }}}
+
+// Main Function {{{
 
 int main(int args, char **argv) {
 
@@ -85,6 +98,10 @@ int main(int args, char **argv) {
 
   CloseWindow();
 }
+
+// }}}
+
+// Function definitions {{{
 
 void Update() {
   UpdateInput();
@@ -175,3 +192,5 @@ void PrintBoard() {
     std::cout << "\n";
   }
 }
+
+// }}}
