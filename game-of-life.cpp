@@ -31,7 +31,7 @@
 
 // }}}
 
-// Varibles and Definitions {{{
+// Variables and Definitions {{{
 
 #define T_WHITE "\x1b[38;5;15m\x1b[1m"
 #define T_BLACK "\x1b[38;5;16m\x1b[1m"
