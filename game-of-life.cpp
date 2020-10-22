@@ -75,7 +75,7 @@ void UpdateBoard();
 
 // Main Function {{{
 
-int main(int args, char **argv) {
+int main(void) {
 
   InitWindow(screen_width, screen_height, "Conway's Game Of Life");
 
