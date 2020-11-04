@@ -5,17 +5,17 @@
  *
  * Conway's Game of Life :
  *
- *  - It's universe is an infinite two-dimensional grid of cells,
- * each of which is in one of two possible states, live or dead.
- * Every cell interacts with its eight neighbors.
- * At each step in time, the following transitions occur:
+ *  - It's universe is an infinite two-dimensional grid of cells, each of which
+ * is in one of two possible states, live or dead. Every cell interacts with 
+ * its eight neighbors. At each step in time, the following transitions occur:
  *
  *   1. Any live cell with fewer than two live neighbors dies by exposure.
  *   2. Any live cell with more than three live neighbors dies by overcrowding.
  *   3. Any live cell with two or three live neighbors survives.
  *   4. Any dead cell with exactly three live neighbors will come to life.
- * ___________________________________________________________________________ 
- * 
+ *
+ * ────────────────────────────────────────────────────────────────────────────
+ *
  *  Author: YV31 (https://github.com/YV31)
  *
  *  Made with raylib just for fun ;)
