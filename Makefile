@@ -1,6 +1,6 @@
 CC=clang++
 CFLAGS=-Wall -Wextra
-LDFLAGS=-L/usr/local/lib -lraylib -lGLU -lrt -lm -ldl -lrt -lm -ldl -lrt -lm -ldl -lGLU -lrt -lm -ldl -lrt -lm -ldl -lrt -lm -ldl -lX11 -lpthread -lxcb -lXau -lXdmcp
+LDFLAGS=-L/usr/local/lib -lraylib -lGLU -lm -ldl -lrt -lGLU -lX11 -lpthread -lxcb -lXau -lXdmcp
 SRC=game-of-life.cpp
 
 all: $(SRC)
